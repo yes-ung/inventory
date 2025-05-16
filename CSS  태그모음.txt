@@ -1,0 +1,74 @@
+CSS 풀네임 Cascading Style Sheet)
+
+
+ul-li 에서 앞에 점 없애기
+li { list-style-type: none;}
+
+li 줄마다 선택 (색깔넣기 등 활용)
+li:nth-child(2n){   } ->짝수줄
+li:nth-child(2n+1)  -> 홀수줄
+
+border-collapse: collapse; 테이블(표) 외곽선을 1줄로 붙이기
+
+* (와일드카드)전체 선택
+
+선택자 우선순위
+style속성(높음) > id > class > 태그 > 전체 선택자(낮음)
+
+!important 우선순위 가장높게 만듬
+
+:hover 마우스 가져댔을때
+
+:active 마우스 클릭
+
+vw( viewport width)
+vh(viewport height)
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+<div class="a b c d"></div> 이러면 요건 a, b, c, d 클래스가 됨
+
+#5877f9 : 자주 쓰는 밝은 파랑
+
+
+반응형 웹 자주쓰는 코드
+
+@media screen and (min-width:768px) {
+    
+}
+@media screen and (min-width:1024px) {
+    
+}
+
+CSS 배경색(background-color) 투명 or 없애기
+배경색을 없애고 투명하게 만들고 싶다면 transparent를 사용해주면 된다.
+
+background-color:transparent;
+ 
+
+position 생략하면 기본값 : static(좌표없음)
+z-index : 겹칠 떄 우선순위
+
+ absolute 절대좌표를 쓸일이 생기면 부모태그에 상대좌표 relative를 설정하면
+나중에 수정될때 편하다
+
+:root
+--이름 (css 변수)
+
+사용할때 var(--이름)
+
+
+
+하위 div 위아래 순서 안 건드리고 가운데 정렬시키기
+.navOuter{ display: flex; justify-content: center;}
+.navinner{display: flex; flex-direction: column;}
+
+
+
+
+
+

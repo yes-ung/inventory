@@ -1,0 +1,59 @@
+html 태그모음
+<ul> unordered list(순서없는 목록)
+ +<li>
+*블라
+*블라
+*블라
+
+<ol> ordered list(순서 있는 목록)
+ +<li>
+1.블라
+2.블라
+3.블라
+
+공백 한칸 띄우기
+&nbsp;
+
+공백 4칸 띄우기
+&emsp;
+
+여러 기능있는 것들 만들기
+<input>
++(text,radio,password,button,file,supmit,checkbox,hidden 등등)
+
+<select> 선택상자 만들기
++<option>
+
+<textarea> 글자넣는 칸 만들기
+
+&lt;  < 표시 (less than)
+&gt; > 표시 (greater than)
+
+<div> 태그 (공간태그)
+
+<style> = html에서 바로 css 속성 값을 넣음, 웹 표준에 어긋나서 비추천
+
+<!-- 파비콘 : 웹브라우저 탭 글자앞에 이미지 -->
+    <link rel="icon" type="image/png" href="../img/simple-coding.png"/>
+
+
+시멘틱태그 모음
+article
+aside
+details
+figcaption
+figure
+footer
+header
+main
+mark
+nav
+section
+summary
+time
+
+
+
+
+
+

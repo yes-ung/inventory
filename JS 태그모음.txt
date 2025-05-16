@@ -1,0 +1,95 @@
+JQuery 넣기
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+
+
+
+
+$(funtion(){})
+
+
+children
+find
+click
+show hide
+toggle (show hide 번갈아가면서 동작)
+fadeToggle ( 서서히 나타남이 추가된 toggle)
+removeClass  addClass
+hover
+slideup slidedown
+val
+text
+attr
+scroll
+scrollTop
+animate
+
+
+
+**Swiper 플러그인** (이미지가 회전하는 플러그인)
+ <!-- Link Swiper's CSS -->
+
+    <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+ <!-- Swiper JS: 공식사이트) https://swiperjs.com/demos -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+사용법:
+let swiper = new Swiper(".mySwiper", { 
+  autoplay: { 
+    delay: 지연시간(밀리초), 
+  }, 
+  pagination: { 
+    el: ".swiper-pagination", 
+    dynamicBullets: true, 
+  }, 
+});
+
+
+
+
+**AOS 플러그인**  ( 이미지가 어디선가 나타나는 플러그인)
+ <!-- AOS css: https://michalsnik.github.io/aos/ --> 
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+
+<!-- AOS js: https://michalsnik.github.io/aos/ --> 
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+
+
+
+@@Typed JS 플러그인@@ (글자가 타이핑되며 나타나는 플러그인)
+ <!-- typed js: https://mattboldt.com/demos/typed-js/ -->
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+
+사용법 : 
+let typing = new Typed('id선택자', { 
+  strings: [‘타이핑1', '타이핑2'], 
+  typeSpeed: 타이핑속도(밀리초), 
+});
+
+
+
+
+@@isotope JS 플러그인@@
+ <!-- TODO : isotope cdn(인터넷주소): https://isotope.metafizzy.co/ -->
+
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+
+
+사용법:
+$(“부모선택자”).isotope({ 
+  itemSelector: '.자식클래스', 
+  layoutMode: '모드',   "fitRows"
+  filter: ".보여줄클래스" 
+}); 
+
+
+
+

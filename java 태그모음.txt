@@ -1,0 +1,251 @@
+@@@@@@@
+System.out.printf(  a  ,  b    );
+
+a:
+- %s : 여러 글자를 표시합니다.
+- %d: 정수를 표시합니다. 
+- %x: 16진수 정수를 표시합니다. 
+- %o: 8진수 정수를 표시합니다. 
+- %f: 실수를 표시합니다. 
+- %.숫자f: 소수점 숫자자리까지 표시합니다. 
+
+b:
+글자나 숫자
+@@@@@@@@
+@@@@@@@@
+글자1.equals(글자2)
+
+글자가 같은지 비교하는 함수 true, false
+@@@@@@@@
+@@@@@@@@
+String 변수=(조건식)? "글자1":"글자2";
+
+한줄로 정의 가능한 조건식이다.
+@@@@@@@@
+@@@@@@@@
+switch(변수) { 
+        case 값1: 
+            실행문1; 
+            break; 
+        case 값2: 
+            실행문2; 
+            break; 
+        … 
+        default: 
+            실행문3; 
+            break; 
+        }
+@@@@@@@@
+@@@@@@@@
+for (int 변수=최초값; 변수<=반복횟수; 변수++) { 
+     실행문; 
+}
+@@@@@@@@
+@@@@@@@@
+int 변수 = 최초값; 
+while (변수 <= 반복될수) { 
+   실행문; 
+   변수++; 
+} 
+@@@@@@@@
+@@@@@@@@
+ do { 
+            실행문;
+        } while(조건식); 
+
+@@@@@@@@
+@@@@@@@@
+break;
+continue;
+@@@@@@@@
+@@@@@@@@
+향상된 for 문
+for (int 변수 : 배열변수) { 
+   System.out.println(변수); 
+} 
+@@@@@@@@
+@@@@@@@@
+깊은 복사
+int[] o = { 1, 2 };         // 원본 
+int[] n = new int[2];       // 복사본 힙 방 예약 2개 
+ 
+for (int i = 0; i < o.length; i++) {
+   n[i] = o[i];               // 깊은 복사 
+}
+@@@@@@@@
+@@@@@@@@
+extends 상속-태그
+abstract 추상-태그
+interface 인터페이스-태그
+implements 인터페이스 전용 상속-태그
+
+@@@@@@@@
+@@@@@@@@
+
+@Override 오버라이드시 오류검사기능
+
+@@@@@@@@
+@@@@@@@@
+private 예약어 :
+다른 클래스는 사용할 수 없습니다. 
+나만 사용 가능합니다. 
+생략 예약어 : 다른 패키지는 사용할 수 없습니다. 
+protected 예약어 : 상속 받은 자식만 사용 가능합니다. 
+public 예약어 : 모든 클래스가 사용 가능합니다. 
+@@@@@@@@@@
+@@@@@@@@@@
+오류 종류
+NullPointerExcetion(NPE) : null 예외,값 없음을 호출했을시
+ArrayIndex OutOfBoundsExcetion: 없는 배열 방을 호출했을때
+NumberFormatExcetion : 
+글자를 숫자로 바꿀때 바꿀수 없는 글자일때
+ClassCastException:
+클래스 객체를 호환되지 않는 다른 클래스 객체로 변환하려고 할때
+
+@@@@@@@@@@@@
+@@@@@@@@@@@@@
+에러 처리 명령어
+try/catch/finally
+
+try { 
+   실행문; 
+} catch (Exception e) { 
+에러표시; 
+} finally { 
+ 무조건실행; (생략가능)
+} 
+
+@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@
+throws Exception : 메소드에 사용해 예외처리 넘기기 가능,
+실행하는 쪽에서 try/catch 사용해야함
+@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@
+System.exit(0)   :  프로그램 강제 종료
+long x = System.nanoTime();   :   프로그램 시간표시
+@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@
+Class x = (가져올 클래스 이름).class;
+		
+		System.out.println(x.getName());  : 클래스 경로+이름
+		System.out.println(x.getSimpleName());   :   클래스 이름만
+@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@
+string 에서 n번째 한글자 가져오기 (0부터 시작) n+1
+
+String ssn = "123456-1234567";
+		
+		System.out.println(ssn.charAt(7));    // 결과 1
+@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@
+string에서 글자위치 확인하기
+String subject = "자바 프로그램";
+		int pos = subject.indexOf("프로그램");
+		System.out.println(pos);     /// 결과 3
+@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@
+string.length();     글자길이
+string.replace("원본글자", "바꿀글자");  원하는 글자만 일괄변경
+string.substring(x, y); x번째에서 y번째까지 글자출력
+String x = string.split("글자") 입력된 글자가 있는 곳마다 쪼개져서 저장됨. 기준이된 글자는 없어짐 
+Arrays.toString(배열x) 배열에 저장된 글자들을 [값1,값2..] 형태로 보여줌
+string.trim()   : 앞쪽에 공백을 모두 없애고 출력
+@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@
+Math.max(숫자1,숫자2);    두 수 비교 큰거
+Math.min(숫자1,숫자2);    두 수 비교 작은거
+Math.abs(숫자);               절대값
+Math.ceil(숫자);              소수 첫째자리 내림
+Math.floor(숫자);            소수 첫째자리 올림
+Math.round(숫자);          소수 첫째자리 반올림
+@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@
+클래스 배열 자동 생성(순서 번호가 있음)(키가 숫자)
+List<x> y = new ArrayList<>();
+List<x> y = new Vector<>();
+List<x> y = new LinkedList<>();
+
+y.add  y.set y.remove y.get
+추가,수정,삭제,가져오기 (정수 번호를 이용해서)
+@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@
+클래스 배열 자동 생성(순서 번호가 없음)(키가 클래스)
+Set<x> y = new HashSet<>();
+
+y.add  y.set y.remove y.get (정수번호가 아닌 클래스로 다룸)
+ex) y.remove(new x());
+@@@@@@@@@@
+@@@@@@@@@@
+클래스 배열 자동 생성 (키,값 구조로)(키를 내 맘대로)
+Map<String(키), x> y = new HashMap<>();
+
+y.put  y.set y.remove y.get *** 이녀석은 입력할때 add가 아닌 put!!
+ex)   y.remove("키로 설정한 글자");
+@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@
+클래스 배열 저장, 마지막 저장한 클래스 나옴
+Stack<y> x = new Stack<>();
+
+x.push (클래스 저장) 
+x.pop (마지막 저장 클래스 제거) 
+x.peek (마지막에 저장된 클래스 가져옴)
+@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@
+클래스 배열 저장 ,첫번째 저장한 클래스 나옴
+Queue<y> x = new LinkedList<>();
+
+x.offer ( 클래스 저장)
+x. poll (맨 앞에 저장된 클래스 제거)
+x.peek (맨 앞에 저장된 클래스 가져옴)
+@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@
+Arrays.toString(배열)); 
+Arrays.deepToString(2 차원배열)); 
+Arrays.fill(배열, 채울값); 
+Arrays.sort(배열, Collections.reverseOrder()); 
+Arrays.sort(배열);
+@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@
+숫자랑 글자만 가능 일반 클래스는 불가능
+일반클래스 정렬하려면  Comparable<일반클래스> 인터페이스를 상속하고 Arrays.sort(배열이름, Comparator.comparingInt(p -> p.변수));
+이용하기
+
+Collections.addAll(list, 값,값2…);   : 입력
+Collections.rotate(list, 값);         :오른쪽으로 밀기
+Collections.swap(list, 값, 값2);    : 각 인덱스 값의 위치 바꾸기
+Collections.sort(list);                 :오름차순 정렬
+Collections.sort(list, Collections.reverseOrder());    : 내림차순 정렬
+Collections.max(list));            :제일 큰 숫자
+Collections.min(list));            :제일 작은 숫자
+@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@
+
+@FunctionalInterface (어노테이션) : 
+인터페이스에 메소드 1개만 있는지 확인 
+
+@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@
+람다식 
+
+() -> 결과 ;
+EX:   () -> System.out.println(60);
+
+@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
